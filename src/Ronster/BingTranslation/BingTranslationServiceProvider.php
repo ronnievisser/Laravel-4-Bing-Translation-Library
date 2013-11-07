@@ -32,8 +32,10 @@ class BingTranslationServiceProvider extends ServiceProvider {
 			require_once( 'lib/BingTranslate.class.php' );
 
 			$api_key = Config::get( 'bingtranslation::api_key' );
+			$cacheEnabled = Config::get( 'bingtranslation::cache_enabled' );
 			
 			$translator = new \BingTranslateWrapper( $api_key );
+			$translator->cacheEnabled( $cacheEnabled );
 			return $translator;
 		});
 
