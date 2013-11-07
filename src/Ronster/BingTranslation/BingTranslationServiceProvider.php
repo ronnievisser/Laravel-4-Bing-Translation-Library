@@ -31,9 +31,9 @@ class BingTranslationServiceProvider extends ServiceProvider {
 		$this->app[ 'bing' ] = $this->app->share( function( $app ) {
 			require_once( 'lib/BingTranslate.class.php' );
 
-			$api_key = Config::get( 'BingTranslation::api_key' );
-
-			$translator = new BingTranslateWrapper( $api_key );
+			$api_key = Config::get( 'bingtranslation::api_key' );
+			
+			$translator = new \BingTranslateWrapper( $api_key );
 			return $translator;
 		});
 
