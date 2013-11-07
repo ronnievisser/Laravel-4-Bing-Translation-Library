@@ -7,7 +7,7 @@ Install this package through Composer. To your `composer.json` file, add:
 
 ```js
 "require-dev": {
-	"Ronster/"ronster/bing-translation": "dev-master"": "dev-master"
+	"ronster/bing-translation": "dev-master"": "dev-master"
 }
 ```
 
