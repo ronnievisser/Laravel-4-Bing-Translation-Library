@@ -34,6 +34,6 @@ This package is a laravel 4 port of the Microsoft Bing Translation PHP wrapper. 
 ## Example
 ```php
 $text = 'Hello world!';
-$translatedTest = Bing::translate( $text, "en", "nl" );
+$translatedText = Bing::translate( $text, "en", "nl" );
 dd($translatedText);
 ```
